@@ -1,0 +1,36 @@
+vifm
+[tab]
+h
+j
+k
+l
+gg
+G
+:q
+
+
+# pane
+[Ctrl] w s
+[Ctrl] w v
+[Ctrl] w o
+
+# preview mode
+e (q to quit)
+w (w to quit)
+[shift] [tab] (navigate to preview)
+
+
+# toggle hidden files
+z o
+z m
+
+# changes
+c w
+c W (preferred to change names)
+[shift] A (append)
+
+# book marks
+' H
+m n
+m p
+:marks
