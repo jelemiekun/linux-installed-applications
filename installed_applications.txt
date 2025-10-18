@@ -23,6 +23,7 @@ flameshot
 slides
 speedtest-cli
 vlc-cli
+gdb
 
 
 
