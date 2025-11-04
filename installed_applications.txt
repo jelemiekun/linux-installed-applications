@@ -24,6 +24,8 @@ slides
 speedtest-cli
 vlc-cli
 gdb
+easyeffects
+antimicrox
 
 
 
