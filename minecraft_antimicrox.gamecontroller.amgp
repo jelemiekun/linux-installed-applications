@@ -4,8 +4,8 @@
     <sdlname>PS4 Controller</sdlname>
     <!--The Unique ID for a joystick is included for informational purposes only.-->
     <uniqueID>05009b514c050000cc0900000081000013562508</uniqueID>
-    <stickAxisAssociation index="1" xAxis="1" yAxis="2"/>
     <stickAxisAssociation index="2" xAxis="3" yAxis="4"/>
+    <stickAxisAssociation index="1" xAxis="1" yAxis="2"/>
     <vdpadButtonAssociations index="1">
         <vdpadButtonAssociation axis="0" button="12" direction="1"/>
         <vdpadButtonAssociation axis="0" button="13" direction="4"/>
@@ -13,26 +13,63 @@
         <vdpadButtonAssociation axis="0" button="15" direction="2"/>
     </vdpadButtonAssociations>
     <names>
-        <buttonname index="8">Sprint</buttonname>
-        <buttonname index="1">Jump</buttonname>
-        <buttonname index="2">Crouch</buttonname>
         <buttonname index="4">Inventory</buttonname>
-        <buttonname index="9">Pick Block</buttonname>
-        <buttonname index="10">Use/Place Block</buttonname>
+        <buttonname index="2">Crouch</buttonname>
+        <buttonname index="1">Jump</buttonname>
         <buttonname index="11">Attack/Destroy</buttonname>
+        <buttonname index="10">Use/Place Block</buttonname>
+        <buttonname index="9">Pick Block</buttonname>
+        <buttonname index="8">Sprint</buttonname>
         <buttonname index="7">Pause/Menu</buttonname>
+        <controlstickname index="2">Stick 2</controlstickname>
+        <controlstickbuttonname index="2" button="7">Look Left</controlstickbuttonname>
+        <controlstickbuttonname index="2" button="5">Look Down</controlstickbuttonname>
+        <controlstickbuttonname index="2" button="3">Look Right</controlstickbuttonname>
+        <controlstickbuttonname index="2" button="1">Look Up</controlstickbuttonname>
         <controlstickname index="1">Stick 1</controlstickname>
         <controlstickbuttonname index="1" button="7">Strafe Left</controlstickbuttonname>
-        <controlstickbuttonname index="1" button="1">Move Forward</controlstickbuttonname>
-        <controlstickbuttonname index="1" button="3">Strafe Right</controlstickbuttonname>
         <controlstickbuttonname index="1" button="5">Move Backward</controlstickbuttonname>
-        <controlstickname index="2">Stick 2</controlstickname>
-        <vdpadbutton index="1" button="1">Chat</vdpadbutton>
-        <vdpadbutton index="1" button="2">Change Item/Scrl Up</vdpadbutton>
-        <vdpadbutton index="1" button="8">Change Item/Scrl Dwn</vdpadbutton>
+        <controlstickbuttonname index="1" button="3">Strafe Right</controlstickbuttonname>
+        <controlstickbuttonname index="1" button="1">Move Forward</controlstickbuttonname>
     </names>
     <sets>
         <set index="1">
+            <stick index="2">
+                <calibrated>false</calibrated>
+                <summary></summary>
+                <stickbutton index="7">
+                    <slots>
+                        <slot>
+                            <code>3</code>
+                            <mode>mousemovement</mode>
+                        </slot>
+                    </slots>
+                </stickbutton>
+                <stickbutton index="5">
+                    <slots>
+                        <slot>
+                            <code>2</code>
+                            <mode>mousemovement</mode>
+                        </slot>
+                    </slots>
+                </stickbutton>
+                <stickbutton index="3">
+                    <slots>
+                        <slot>
+                            <code>4</code>
+                            <mode>mousemovement</mode>
+                        </slot>
+                    </slots>
+                </stickbutton>
+                <stickbutton index="1">
+                    <slots>
+                        <slot>
+                            <code>1</code>
+                            <mode>mousemovement</mode>
+                        </slot>
+                    </slots>
+                </stickbutton>
+            </stick>
             <stick index="1">
                 <calibrated>false</calibrated>
                 <summary></summary>
@@ -40,22 +77,6 @@
                     <slots>
                         <slot>
                             <code>0x41</code>
-                            <mode>keyboard</mode>
-                        </slot>
-                    </slots>
-                </stickbutton>
-                <stickbutton index="1">
-                    <slots>
-                        <slot>
-                            <code>0x57</code>
-                            <mode>keyboard</mode>
-                        </slot>
-                    </slots>
-                </stickbutton>
-                <stickbutton index="3">
-                    <slots>
-                        <slot>
-                            <code>0x44</code>
                             <mode>keyboard</mode>
                         </slot>
                     </slots>
@@ -68,28 +89,28 @@
                         </slot>
                     </slots>
                 </stickbutton>
-            </stick>
-            <dpad index="1">
-                <dpadbutton index="1">
+                <stickbutton index="3">
                     <slots>
                         <slot>
-                            <code>0x54</code>
+                            <code>0x44</code>
                             <mode>keyboard</mode>
                         </slot>
                     </slots>
-                </dpadbutton>
-                <dpadbutton index="2">
+                </stickbutton>
+                <stickbutton index="1">
                     <slots>
                         <slot>
-                            <code>4</code>
-                            <mode>mousebutton</mode>
+                            <code>0x57</code>
+                            <mode>keyboard</mode>
                         </slot>
                     </slots>
-                </dpadbutton>
+                </stickbutton>
+            </stick>
+            <dpad index="1">
                 <dpadbutton index="8">
                     <slots>
                         <slot>
-                            <code>5</code>
+                            <code>4</code>
                             <mode>mousebutton</mode>
                         </slot>
                     </slots>
@@ -102,31 +123,39 @@
                         </slot>
                     </slots>
                 </dpadbutton>
+                <dpadbutton index="2">
+                    <slots>
+                        <slot>
+                            <code>5</code>
+                            <mode>mousebutton</mode>
+                        </slot>
+                    </slots>
+                </dpadbutton>
+                <dpadbutton index="1">
+                    <slots>
+                        <slot>
+                            <code>0x54</code>
+                            <mode>keyboard</mode>
+                        </slot>
+                    </slots>
+                </dpadbutton>
             </dpad>
-            <trigger index="5">
-                <center_value>0</center_value>
-                <min_value>-32767</min_value>
-                <max_value>32767</max_value>
-                <throttle>positivehalf</throttle>
-            </trigger>
             <trigger index="6">
                 <center_value>0</center_value>
                 <min_value>-32767</min_value>
                 <max_value>32767</max_value>
                 <throttle>positivehalf</throttle>
             </trigger>
-            <button index="8">
+            <trigger index="5">
+                <center_value>0</center_value>
+                <min_value>-32767</min_value>
+                <max_value>32767</max_value>
+                <throttle>positivehalf</throttle>
+            </trigger>
+            <button index="4">
                 <slots>
                     <slot>
-                        <code>0x1000021</code>
-                        <mode>keyboard</mode>
-                    </slot>
-                </slots>
-            </button>
-            <button index="1">
-                <slots>
-                    <slot>
-                        <code>0x20</code>
+                        <code>0x45</code>
                         <mode>keyboard</mode>
                     </slot>
                 </slots>
@@ -139,18 +168,18 @@
                     </slot>
                 </slots>
             </button>
-            <button index="4">
+            <button index="1">
                 <slots>
                     <slot>
-                        <code>0x45</code>
+                        <code>0x20</code>
                         <mode>keyboard</mode>
                     </slot>
                 </slots>
             </button>
-            <button index="9">
+            <button index="11">
                 <slots>
                     <slot>
-                        <code>2</code>
+                        <code>1</code>
                         <mode>mousebutton</mode>
                     </slot>
                 </slots>
@@ -163,11 +192,19 @@
                     </slot>
                 </slots>
             </button>
-            <button index="11">
+            <button index="9">
                 <slots>
                     <slot>
-                        <code>1</code>
+                        <code>2</code>
                         <mode>mousebutton</mode>
+                    </slot>
+                </slots>
+            </button>
+            <button index="8">
+                <slots>
+                    <slot>
+                        <code>0x1000021</code>
+                        <mode>keyboard</mode>
                     </slot>
                 </slots>
             </button>

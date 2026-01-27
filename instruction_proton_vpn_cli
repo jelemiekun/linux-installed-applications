@@ -1,0 +1,67 @@
+# Installation
+
+## Download the package
+```
+wget https://repo.protonvpn.com/debian/dists/stable/main/binary-all/protonvpn-stable-release_1.0.8_all.deb
+```
+
+## Install the Proton VPN Repository containing the app
+```
+sudo dpkg -i ./protonvpn-stable-release_1.0.8_all.deb && sudo apt update
+```
+
+## Install the App
+```
+sudo apt install proton-vpn-gnome-desktop
+```
+
+## (Optional) Enable desktop support tray icons if desired
+```
+sudo apt install libayatana-appindicator3-1 gir1.2-ayatanaappindicator3-0.1 gnome-shell-extension-appindicator
+```
+Then restart ProtonVPN if running
+
+## Download CLI
+```
+sudo apt install proton-vpn-cli
+```
+
+# Commands 
+
+## Sign in
+```
+protonvpn signin [username]
+```
+
+## Connect to the fastest VPN server available
+```
+protonvpn connect
+```
+
+## Connect to a specific country
+```
+protonvpn connect --country [Country]
+```
+
+### Examples: (Not Case Sensitive)
+```
+protonvpn connect --country US
+protonvpn connect --country "United States"
+protonvpn connect --city [City]
+protonvpn connect --city miami
+protonvpn connect --city "New York"
+protonvpn connect [server name]
+protonvpn connect CH#242
+```
+### List of servers: 
+https://protonvpn.com/vpn-servers
+
+## Disconnect
+```
+protonvpn disconnect
+```
+
+## Sign out
+```
+protonvpn signout
+```
