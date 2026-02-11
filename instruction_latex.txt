@@ -1,0 +1,23 @@
+Install:
+```
+sudo apt install latexmk
+```
+
+Auto Compile on Save, add this to your init.lua:
+
+```
+vim.api.nvim_create_autocmd("BufWritePost", {
+  pattern = "*.tex",
+  command = "silent! !latexmk -pdf %",
+})
+```
+
+lightweight viewer install:
+```
+sudo apt install zathura
+```
+
+open via zathura:
+```
+zathura file.pdf
+```

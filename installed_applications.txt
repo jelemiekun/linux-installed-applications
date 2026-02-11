@@ -4,6 +4,7 @@ chromium
 telegram-desktop
 obs
 proton-vpn-cli
+zathura
 
 featherpad
 neovim
