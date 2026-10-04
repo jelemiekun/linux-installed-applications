@@ -1,0 +1,10 @@
+i - info
+e - toggle dot files visibility
+r - refresh
+u - size mode
+s - order by filesize
+d - delete selected
+g - toggle percentage/bar
+n - order by filename
+b - spawn shell in current directory
+q - quit
