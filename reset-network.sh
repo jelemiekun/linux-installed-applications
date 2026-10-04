@@ -30,7 +30,9 @@ for i in {1..5}; do
         echo "Status: FAILED"
     fi
 
-    sleep 2
+    if [ "$i" -ne 5 ]; then
+        sleep 2
+    fi
 done
 
 status "Network reset complete"
